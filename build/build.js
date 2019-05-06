@@ -33,9 +33,9 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
     }
 
     console.log(chalk.cyan('  Build complete.\n'))
-    console.log(chalk.red(
+    console.log('"\x1b[41m"',
       'Verifique o arquivo src/router/index.js para base do router\n' +
       'Verfique o arquivo config/index.js tag build /padrao/'
-    ))
+    )
   })
 })
