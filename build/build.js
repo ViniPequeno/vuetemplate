@@ -33,9 +33,9 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
     }
 
     console.log(chalk.cyan('  Build complete.\n'))
-    console.log(chalk.yellow(
-      '  Tip: built files are meant to be served over an HTTP server.\n' +
-      '  Opening index.html over file:// won\'t work.\n'
+    console.log(chalk.red(
+      'Verifique o arquivo src/router/index.js para base do router\n' +
+      'Verfique o arquivo config/index.js tag build /padrao/'
     ))
   })
 })
