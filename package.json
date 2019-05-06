@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "buildAndCommit": "node -e \"const mssg = process.argv[1] + '\\n by buildAndCommit - VS2019'; var push = process.argv[2]; if(!process.argv[2]){ push = 'origin master'}; require('child_process').execSync('npm run build && git add * && git commit -m \\\"' + mssg + '\\\" && git push '+push, { stdio:[0, 1, 2] })\""
+    "buildAndCommit": "node -e \"const mssg = process.argv[1] + 'by buildAndCommit - VS2019'; var push = process.argv[2]; if(!process.argv[2]){ push = 'origin master'}; require('child_process').execSync('npm run build && git add * && git commit -m \\\"' + mssg + '\\\" && git push '+push, { stdio:[0, 1, 2] })\""
   },
   "dependencies": {
     "vue": "^2.5.2",
